@@ -107,6 +107,7 @@ def user_register():
         return jsonify({'message': '注册成功','code': 200})
 def demo():
     pass
+"""测试一下"""
 
 
 if __name__ == '__main__':
