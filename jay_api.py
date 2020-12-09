@@ -1,5 +1,8 @@
 from flask import Flask,make_response,jsonify,request
 import pymysql
+""" 
+Typeerror : 服务器未启动项目
+"""
 
 
 app = Flask(__name__)
@@ -103,11 +106,10 @@ def user_register():
 
     if get_username in list_name:
         return jsonify({'message': '用户名已存在','code': 200})
-    elif get_password not in list_name:
+    elif get_username not in list_name:
         return jsonify({'message': '注册成功','code': 200})
 def demo():
     pass
-"""测试一下"""
 
 
 if __name__ == '__main__':
